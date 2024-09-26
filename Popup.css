@@ -1,0 +1,181 @@
+.popup {
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    width: 90%; 
+    max-width: 600px; 
+    max-height: 90vh; 
+    overflow-y: auto; 
+    z-index: 1000;
+    padding: 30px; 
+    border-radius: 12px; 
+    background: #ffffff; /* White background */
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+    font-family: 'Arial', sans-serif; 
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+h3 {
+    font-size: 28px;
+    color: #ffffff; /* White color for the title */
+    font-family: 'Georgia', serif; 
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px; /* Added padding */
+    background: linear-gradient(135deg, #ff6347, #ff3d00); 
+    border-radius: 10px; /* Rounded corners for the header */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+.company-info, .bill-ship-info {
+    text-align: left;
+    line-height: 1.8; /* Increased line-height for better readability */
+    font-weight: 600; /* Slightly bolder text */
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+.bill-ship-info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ddd; 
+    padding-top: 20px; 
+}
+
+.bill-to, .ship-to {
+    width: 48%; 
+    padding: 10px; /* Added padding for better spacing */
+    background: #f9f9f9; /* Light background for billing/shipping sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.receipt-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.receipt-table th, .receipt-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    color: #555; /* Darker text color */
+}
+
+.receipt-table th {
+    background-color: #ff6347; /* Header background color */
+    color: #ffffff; /* White text color for header */
+}
+
+.receipt-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.receipt-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+.receipt-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+    font-size: 16px;
+    font-weight: 600; 
+}
+
+.receipt-summary {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 16px;
+    background-color: #ffefef; /* Light background for summary */
+    padding: 10px; /* Padding around the summary */
+    border-radius: 8px; /* Rounded corners for summary */
+}
+
+.receipt-summary p {
+    margin: 5px 0;
+    color: #555;
+    font-weight: bold; 
+}
+
+.product-entry {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-entry input {
+    margin-bottom: 10px;
+    padding: 10px; 
+    font-size: 14px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.product-entry button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.product-entry button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Optional: Responsive styles */
+@media (max-width: 768px) {
+    .popup {
+        width: 95vw; 
+        padding: 20px; /* Add padding for smaller screens */
+    }
+}
+
+strong {
+    font-weight: bold;
+    color: #333; /* Dark color for strong text */
+}
+
+
+
+
+.company-info {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between text and logo */
+    align-items: center; /* Center items vertically */
+    line-height: 1.8; /* Increased line-height for better readability */
+    font-weight: 600; /* Slightly bolder text */
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+.info-text {
+    flex-grow: 1; /* Allows this to take up available space */
+}
+
+.company-logo {
+    width: 300px; 
+    height: auto; 
+    margin-left: 0%;
+
+}
